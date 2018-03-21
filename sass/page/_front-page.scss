@@ -1,0 +1,244 @@
+.p-front-page {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+
+	.recent-rescues-container {
+            display: flex;
+            flex-flow: column nowrap;
+            background-color: white;
+            width: 86%;
+            -webkit-box-shadow: 11px 11px 29px -8px rgba(0,0,0,0.69);
+            -moz-box-shadow: 11px 11px 29px -8px rgba(0,0,0,0.69);
+            box-shadow: 11px 11px 29px -8px rgba(0,0,0,0.69);
+
+
+
+            .post-container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                padding: 10px;
+                box-sizing: border-box;
+
+                .title {
+
+                    text-transform: uppercase;
+                    width: 100%;
+                    margin-top: 30px;
+                    margin-left: 25px;
+                    font-family: $dosis;
+                }
+
+                .recent-rescue-post {
+                    width: 33.333%;
+                    max-width: 260px;
+                    margin: 25px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-flow: column wrap;
+
+
+                    header {
+                        position: absolute;
+                        color: white;
+                        width: 100%;
+                        max-width: 260px;
+                        padding-left: 10px;
+                        box-sizing: border-box;
+                        background-color: $orange_header_transparent;
+                    }
+
+                    // &:nth-of-type(3) header {
+                    //     background-color: $orange_header_transparent;
+                    // }
+                    //
+                    // &:nth-of-type(2) header {
+                    //     background-color: $green_header_transparent;
+                    // }
+                    //
+                    // &:nth-of-type(1) header {
+                    //     background-color: $blue_header_transparent;
+                    // }
+
+                    img {
+                        max-width: 260px;
+                    }
+
+                    p {
+                        height: 70px;
+                    }
+
+                    footer a {
+                        padding-right: 20px;
+                        border-bottom: 11px solid;
+                        border-color: $orange_header;
+                        color: $orange_header;
+                    }
+
+                    // &:nth-of-type(3) footer a {
+                    //     border-color: $orange_header;
+                    //     color: $orange_header;
+                    // }
+                    //
+                    // &:nth-of-type(2) footer a {
+                    //     border-color: $green_header;
+                    //     color: $green_header;
+                    // }
+                    //
+                    // &:nth-of-type(1) footer a {
+                    //     border-color: $blue_header;
+                    //     color: $blue_header;
+                    // }
+
+
+                }
+            }
+	}
+
+	.help-container {
+
+		width: 86%;
+		margin: auto;
+		padding-top: 15px;
+
+		.ads {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+
+
+                .teaser {
+                    margin-left: 25px;
+                    flex: 3;
+
+                    h1 {
+                        font-size: 58px;
+                        margin-top: 12px;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .image {
+                    flex: 5;
+                    text-align: end;
+                    position: relative;
+                    left: 167px;
+                    top: 12px;
+                }
+            }
+	}
+}
+
+
+
+
+@media only screen and (max-width: 860px) {
+    .p-front-page {
+        .recent-rescues-container {
+            .post-container {
+                .recent-rescue-post {
+
+                    width: calc(50% - 50px);
+
+                    header {
+                        max-width:200px;
+                    }
+
+                    img {
+                         max-width:200px;
+                    }
+                }
+
+
+            }
+        }
+
+        .help-container {
+            .ads {
+                .teaser {
+                    h1 {
+                        font-size:  40px;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+                .image {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 550px) {
+    .p-front-page {
+        .recent-rescues-container {
+            width: 96%;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            .post-container {
+
+                padding: 0;
+
+                .title {
+                    margin-left: 20px;
+                }
+
+                .recent-rescue-post {
+                    width: 100%;
+                    margin-left: 20px;
+                    p {
+                        margin-bottom: 2px;
+                    }
+                }
+
+
+            }
+        }
+
+        .help-container {
+            width: 96%;
+
+            .ads {
+
+                .teaser {
+                    flex: 1 1 99%;
+                    margin-left: 20px;
+
+                    h1 {
+                        font-size: $h1_smartphone_size;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+
+                    .image {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+}

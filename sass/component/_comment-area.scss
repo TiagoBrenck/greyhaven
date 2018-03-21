@@ -1,0 +1,111 @@
+.comments-area {
+
+    width: 86%;
+    margin: auto;
+
+    h2 {
+            font-weight: 400;
+            font-size: 2em;
+            margin-bottom: 20px;
+    }
+
+    .comment-body {
+            margin: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f3f5fd;
+            border: 0.2px solid #dadada;
+            max-width: 550px;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            .says {
+                    display: none;
+            }
+
+            .comment-author {
+                    display: flex;
+                    flex-flow: column wrap;
+            } 
+
+            .comment-meta {
+
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+                    width: 100%;
+                    font-size: 18px;
+
+                    .comment-metadata {
+                            display: flex;
+
+                            time {
+                                    font-weight: 400;
+                                    color: $blue_header;
+                            }
+
+                            a{
+                                    order: 2;
+                                    margin: 0 10px 0 5px;
+                            }
+
+                            span {
+                                    order: 1;
+
+                            }
+                    }
+            }
+
+            .comment-content {
+
+                    margin: 0 10px;
+
+                    p{
+                            margin:0;
+                    }
+            }
+
+            .reply {
+
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 1%;
+
+                    font-weight: 400;
+
+
+                    a {
+                            text-align: right;
+                            font-weight: bold;
+                            color: $orange_header;
+                    }
+            }
+    }
+    
+    .comment-form {
+        display: flex;
+        flex-flow: column;
+        
+        .comment-form-author {
+            order: 1;
+        }
+        
+        .comment-form-email {
+            order: 2;
+        }
+        
+        .comment-form-url {
+            display: none;
+        }
+        
+        .comment-form-comment {
+            order: 3;
+        }
+        
+        .form-submit {
+            order: 4;
+        }
+    }
+
+}

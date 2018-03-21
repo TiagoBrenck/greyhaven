@@ -1,0 +1,28 @@
+.p-volunteer {
+
+  .o-info-list {
+    padding-left: 25px;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    padding: 25px;
+
+    h2,h4 {
+      margin-bottom: 0;
+      width: 100%;
+    }
+    h4{
+      margin-top:5px;
+    }
+
+    ol {
+      li {
+        margin-top:3px;
+      }
+    }
+  }
+
+}

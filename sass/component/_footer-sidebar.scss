@@ -1,0 +1,36 @@
+.c-footer-sidebar {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: auto;
+	border-top: 11px solid $color_header_img_border;
+	background-color: rgba(87,168, 222, .22);;
+
+
+
+	.widget_search {
+		width: 100%;
+	}
+
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 550px) {
+	.c-footer-sidebar {
+		flex-direction: column;
+
+		section {
+			margin-left: 20px;
+
+			h2 {
+				margin-bottom: 0;
+			}
+
+			ul {
+				margin-top: 5px;
+				margin-bottom: 1px;
+			}
+		}
+	}
+}

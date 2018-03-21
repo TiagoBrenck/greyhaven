@@ -1,0 +1,35 @@
+.form-container {
+
+	width: 86%;
+	max-width: 550px;
+
+	.comment-notes {
+		display: none;
+	}
+
+	.logged-in-as {
+		display: none;
+	}
+
+	p {
+		display: flex;
+		flex-flow: column nowrap;
+		font-size: 20px;
+		margin-top: 0;
+
+		label {
+			font-size: 1em;
+		}
+	}
+
+	input[type='submit'] {
+
+		width: 40%;
+		max-width: 200px;
+
+		&:hover {
+			background-color: #eb8e23;
+		}
+	}
+
+}

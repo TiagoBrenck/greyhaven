@@ -1,0 +1,29 @@
+.p-about {
+
+	.title {
+		font-size: $h1_size;
+
+		span {
+			font-weight: 300;
+		}
+
+		.banner-container {
+			position: relative;
+			text-align: center;
+
+			.banner-title {
+				position: absolute;
+				top: 70px;
+				left: 10px;
+			}
+
+			.banner-description {
+				position: absolute;
+				top: 170px;
+				left: 10px;
+				font-size: 1.4rem;
+				max-width: 400px;
+			}
+		}
+	}
+}

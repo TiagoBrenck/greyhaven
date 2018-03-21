@@ -1,0 +1,57 @@
+.p-donate {
+    
+    header {
+        width: 100%;
+    }
+	.container {
+		display: flex;
+		flex-flow: column nowrap;
+		width: 50%;
+		box-sizing: border-box;	
+		padding: 25px;
+
+		.button-area {
+			display: flex;
+			flex-flow: row nowrap;
+			
+
+			.money, .card {
+				padding: 5px 8px;
+				margin: 10px 0;
+				font-size: 20px;
+				width: 133px;
+				border: 2px solid #b37e2a;
+			}
+
+			.money {
+				margin-left: 30px; 
+			}
+		}
+	}
+
+	.banner {
+            width: 40%;
+	}
+}
+
+@media only screen and (max-width: 670px) { 
+	.p-donate {
+		.container {
+			width: 65%;
+		}
+		.banner {
+            width: 30%;
+		}
+	}
+}
+
+@media only screen and (max-width: 550px) {
+.p-donate {
+		.container {
+			width: 96%;
+		}
+		.banner {
+            display: none;
+		}
+	}
+}

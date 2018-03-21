@@ -1,0 +1,129 @@
+body {
+  background-color: $color_body_background;
+  max-width: 1359px;
+  margin: auto;
+}
+
+h1 {
+  font-size: $h1_size;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0;
+  color: $color_top_menu_background;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+body,
+input {
+  font-family: $dosis;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bold {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.site-main {
+  margin: 20px;
+  padding: 25px;
+
+  article {
+    width: 100%;
+  }
+}
+/*Table*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  tbody {
+    tr {
+      line-height: 2;
+    }
+
+    tr:nth-of-type(odd) {
+      background: #eee;
+    }
+  }
+}
+/*LINKS*/
+
+.info-link {
+  color: $orange_header;
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 768px) {
+  h1 {
+    font-size: $h1_smartphone_size;
+  }
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  tbody,
+  td,
+  th,
+  thead,
+  tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+    }
+  }
+}

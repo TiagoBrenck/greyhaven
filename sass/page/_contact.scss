@@ -1,0 +1,83 @@
+.p-contact {
+
+	.title {
+		text-transform: uppercase;
+	}
+
+	.container {
+		display: flex;
+		flex-flow: row nowrap;
+		width: 100%;
+
+		padding: 25px;
+	}
+
+	.left-column {
+		width: 50%;
+	}
+	.right-column {
+
+		font-size: 20px;
+		width: 50%;
+
+		.address-box {
+			border-top: 11px solid $green_header;
+			border-bottom: 11px solid $green_header;
+			width: 80%;
+
+			.mailing {
+				color: $red_alert;
+				font-weight: bold;
+			}
+			.address {
+
+				margin: 5px 0;
+				p {
+					margin: 0;
+				}
+				a {
+					color: $blue_header;
+				}
+				.note {
+					color: $red_alert;
+					font-size: 1rem;
+					font-weight: bold;
+					margin-bottom: 5px; 
+				}
+
+			}
+		}
+
+		.map {
+			margin-top: 25px;
+			width: 80%;
+		}
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 550px) {
+
+	.p-contact {
+		.container {
+			display: flex;
+			flex-flow: column wrap;
+			padding: 20px;
+		}
+
+		.left-column {
+			width: 100%;
+		}
+
+		.right-column {
+			margin-top: 25px;
+			width: 100%;
+
+			.address-box {
+
+				width: 100%;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,167 @@
+.index-content-area, .single-content-area {
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	.site-main {
+		background-color: white;
+	    width: 86%;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: space-between;
+	    -webkit-box-shadow: 11px 11px 29px -8px rgba(0,0,0,0.69);
+	    -moz-box-shadow: 11px 11px 29px -8px rgba(0,0,0,0.69);
+	    box-shadow: 11px 11px 29px -8px rgba(0,0,0,0.69);
+
+            .title-header {
+                width: 100%;
+            }
+
+	    .title {
+
+	    	margin-left: 25px;
+
+	    }
+
+	    .content-post {
+
+	    	margin: auto;
+	    	margin-top: 30px;
+	    	margin-bottom: 30px;
+	    	width: 86%;
+	    	border: 6px solid $green-header;
+	    	box-sizing: border-box;
+
+	    	header {
+	    		background-color: $green-header;
+	    		color: white;
+
+	    		h1 {
+	    			margin: 0;
+	    			color: white;
+	    			text-align: center;
+	    		}
+	    	}
+
+	    	.image-content {
+	    		margin-right: 40px;
+
+	    		button {
+	    			width: 100%;
+                                transition: all .2s;
+
+	    			&:hover {
+	    				background-color: #eb8e23;
+	    			}
+	    		}
+	    	}
+
+	    	.entry-content {
+	    		display: flex;
+	    		flex-flow: row nowrap;
+	    		padding: 12px;
+	    		font-size: 40px;
+	    		box-sizing: border-box;
+
+	    		.info-content {
+	    			display: flex;
+	    			flex-flow: column wrap;
+	    			width: 60%;
+
+	    			.info {
+	    				display: flex;
+	    				flex-flow: column wrap;
+	    				margin-bottom: 22px;
+
+	    				label {
+	    					font-size: 0.8em;
+	    					font-weight: 400;
+	    					line-height: 1.5;
+
+	    					span {
+	    						font-size: 0.8em;
+	    						font-weight: 300;
+	    						text-align: right;
+	    					}
+	    				}
+
+	    				.division {
+	    					border-bottom: 0.9px solid black;
+	    					margin-top: 20px;
+	    					width: 90%;
+	    				}
+
+	    				.bio {
+
+	    					width: 90%;
+	    					p {
+	    						margin-top: 0;
+	    						font-size: 0.6em;
+	    					}
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+
+	    .comment-respond {
+	    	.comment-reply-title {
+	    		font-size: 2em;
+	    		font-weight: 400;
+	    	}
+
+	    	h3 {
+	    		margin-bottom: 20px;
+	    	}
+	    }
+	}
+
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 550px) {
+	.index-content-area, .single-content-area {
+		.site-main {
+			width: 96%;
+			-webkit-box-shadow: none;
+	    	-moz-box-shadow: none;
+	    	box-shadow: none;
+
+	    	.title {
+	    		margin-left: 20px;
+	    	}
+
+	    	.content-post {
+	    		width: 96%;
+
+	    		.entry-content {
+
+    				font-size: 24px;
+
+    				.info-content {
+    					width: 50%;
+
+    					.info {
+    						margin-bottom: 12px;
+
+    						.division {
+	    						margin-top: 8px;
+	    					}
+    					}
+
+
+    				}
+	    		}
+
+	    		.image-content {
+	    			margin-right: 10px;
+	    			width: 50%;
+	    		}
+	    	}
+
+		}
+	}
+}

@@ -1,0 +1,74 @@
+.c-adoption-post-preview {
+
+	width: 33.333%;
+    max-width: 260px;
+    margin: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+
+    header {
+
+        position: absolute;
+        color: white;
+        width: 100%;
+        max-width: 260px;
+        padding-left: 10px;
+        box-sizing: border-box;
+				background-color: $orange_header_transparent;
+    	a {
+    		color: white;
+    	}
+    }
+
+    // &:nth-of-type(1n) header {
+    //     background-color: $blue_header_transparent;
+    // }
+    //
+    // &:nth-of-type(3n-1) header {
+    //     background-color: $green_header_transparent;
+    // }
+    //
+    // &:nth-of-type(3n) header {
+    //     background-color: $orange_header_transparent;
+    // }
+
+
+
+
+    footer a {
+        padding-right: 15%;
+        font-weight: bold;
+				border-color: $orange_header;
+        color: $orange_header;
+				border-bottom: 11px solid;
+    }
+
+    // &:nth-of-type(1n) footer a {
+    //     border-bottom: 11px solid;
+    //     border-color: $blue_header;
+    //     color: $blue_header;
+    // }
+    //
+    // &:nth-of-type(3n-1) footer a {
+    //     border-bottom: 11px solid;
+    //     border-color: $green_header;
+    //     color: $green_header;
+    // }
+    //
+    // &:nth-of-type(3n) footer a {
+    // 	border-bottom: 11px solid;
+    //     border-color: $orange_header;
+    //     color: $orange_header;
+    // }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 550px) {
+    .c-adoption-post-preview {
+        width: 100%;
+        margin-left: 25px;
+    }
+}

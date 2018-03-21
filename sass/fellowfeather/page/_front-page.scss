@@ -1,0 +1,57 @@
+.p-front-page {
+
+
+
+	.title {
+
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 10px solid $color_title_stick;
+		
+		width: $size_containt_area;
+		margin: auto;
+		margin-top: 30px;
+		font-family: $kite-one;
+	}
+
+	.recent-rescues-container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.help-container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		width: 66%;
+		margin: auto;
+		padding-top: 40px;
+
+		.ads {
+			display: flex;
+			flex-flow: row wrap;
+			margin: 0 50px;
+			
+
+			.teaser {
+
+				h3 {
+					font-size: 1.7rem;
+					margin-top: 0;
+				}
+			}
+
+			.donate {
+				width: 100%;
+				align-self: flex-end;
+
+				input[type="button"] {
+
+					height: 40px;
+					width: 40%;
+
+				}
+			}
+		}
+	}
+}

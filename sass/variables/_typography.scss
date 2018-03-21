@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
+
+$open-sans: 'Open Sans', sans-serif;
+$dosis: 'Dosis', sans-serif;
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('sass/fonts/icomoon.eot?k9rfjb');
+  src:  url('sass/fonts/icomoon.eot?k9rfjb#iefix') format('embedded-opentype'),
+    url('sass/fonts/icomoon.ttf?k9rfjb') format('truetype'),
+    url('sass/fonts/icomoon.woff?k9rfjb') format('woff'),
+    url('sass/fonts/icomoon.svg?k9rfjb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-toggle:before {
+  content: "\e900";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-quill:before {
+  content: "\e907";
+}
